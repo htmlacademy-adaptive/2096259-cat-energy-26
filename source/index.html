@@ -1,41 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Cat Enegry</title>
   </head>
 
-  <body>
+  <body class="page__body">
 
     <!--Шапка-->
 
     <header class="main-header">
-      <nav class="navigation">
-        <a class="navigation__logo" href="#">
-          <img class="" scr="#" width="" height=""
-            alt="Логотип сайта магазина Кэт Энерджи.">
-        </a>
-        <h1 class="navigation__title">
-          Cat Energy
-        </h1>
-        <button class="navigation__menu" type="button">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" scr="#" width="#" height="#"
+          alt="Логотип сайта магазина Cat Enargy.">
+      </a>
+      <h1 class="main-header__title">
+        Cat Energy
+      </h1>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню.
+          </span>
+        </button>
+        <div class="main-nav__wrapper">
+           <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+           </ul>
+        </div>
       </nav>
     </header>
-    <main class="main-index">
+
+    <main class="main-container">
 
       <!--Приветственный текст Cat Energy и кнопка с подбором программы-->
 
-      <section class="start-info">
-        <h2 class="start-info__title">
-          Функциональное питание для котов
+      <section class="program-selection">
+        <h2 class="visually-hidden">
+          Подбор программы питания Cat Energy.
         </h2>
-        <p class="start-info__subtitle">
+        <p class="program-selection__title">
+          Функциональное питание для котов
+        </p>
+        <p class="program-selection__slogan">
           Занялся собой? Займись котом!
         </p>
-        <img class="start-info__food-image" scr="#" width="" height=""
+        <img class="program-selection__food-image" scr="#" width="" height=""
             alt="Фото корма с курицей">
-        <button class="start-info__find-program" type="button">
+        <button class="program-selection__button" type="button">
           Подобрать программу
         </button>
       </section>
@@ -43,7 +70,7 @@
       <!--Выбор каталога по снижению или набору массы-->
 
       <section class="sliming">
-        <img class="slimig__slim-cat" scr="#" width="" height=""
+        <img class="sliming__slim-cat-image" scr="#" width="50" height="53"
         alt="Логотип худеющего котика.">
         <h2 class="sliming__title">
           Похудение
@@ -51,16 +78,16 @@
         <p class="sliming__subtitle">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
-        <h2 class="sliming__catalog-title catalog-title">
-          Каталог slim
-        </h2>
-        <a class="sliming__catalog-slim-link" href="#">
-          <img class="" scr="#" width="" height=""
+        <a class="sliming__catalog-link" href="#">
+          <h2 class="sliming__catalog-title catalog-title">
+            Каталог slim
+          </h2>
+          <img class="sliming__arrow arrow-transition" scr="#" width="24" height="12"
             alt="Стрелочка с переходом в каталогу питания для похудания.">
         </a>
       </section>
       <section class="weighting">
-        <img class="weighting__weight-cat" scr="#";
+        <img class="weighting__weight-cat" scr="#"
         alt="Логотип котика, который набирает массу.">
         <h2 class="weighting__title">
           Набор массы
@@ -71,8 +98,8 @@
         <h2 class="weighting__catalog-title">
           Каталог pro
         </h2>
-        <a class="weighting__catalog-weight-link" href="#">
-          <img class="" scr="#" width="" height=""
+        <a class="weighting__catalog-link" href="#">
+          <img class="weighting__arrow arrow-transition" scr="#" width="24" height="12"
             alt="Стрелочка с переходом в каталогу питания для набора массы.">
         </a>
       </section>
@@ -212,7 +239,6 @@
           <span class="visually-hidden">Логотип htmlacadem.</span>
         </a>
       </section>
-    </footer>
     </footer>
   </body>
 </html>
